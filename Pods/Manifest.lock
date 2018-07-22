@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.7.2)
+  - LTMorphingLabel (0.5.6)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - LTMorphingLabel
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - LTMorphingLabel
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  LTMorphingLabel: bdb51d4682e9822da89da6f567bd8aa456fd6650
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: e43ec0a35f0de08e8dcdff8e6a283d3dafb95867
+
+COCOAPODS: 1.5.0
