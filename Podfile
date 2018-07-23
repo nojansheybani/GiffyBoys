@@ -6,8 +6,7 @@ target 'gifMeSomeLovin' do
   use_frameworks!
 
   # Pods for gifMeSomeLovin
-    pod 'SwiftyJSON'
-    pod 'Alamofire'
-    pod 'LTMorphingLabel'
+    pod 'GiphyCoreSDK'
+    pod 'FLAnimatedImage'
 
 end

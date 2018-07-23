@@ -12,6 +12,7 @@
 		381FD57E21029CF500C5B40F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381FD57C21029CF500C5B40F /* Main.storyboard */; };
 		381FD58021029CF700C5B40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381FD57F21029CF700C5B40F /* Assets.xcassets */; };
 		381FD58321029CF700C5B40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381FD58121029CF700C5B40F /* LaunchScreen.storyboard */; };
+		381FD5AB2105459300C5B40F /* extendImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381FD5AA2105459300C5B40F /* extendImage.swift */; };
 		5FB287B193FB1B9F5C014B82 /* Pods_gifMeSomeLovin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B900B802C010D2D93C1D13E6 /* Pods_gifMeSomeLovin.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		381FD57F21029CF700C5B40F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		381FD58221029CF700C5B40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		381FD58421029CF700C5B40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381FD5AA2105459300C5B40F /* extendImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extendImage.swift; sourceTree = "<group>"; };
 		4BBE276276A876FB3346A846 /* Pods-gifMeSomeLovin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gifMeSomeLovin.release.xcconfig"; path = "Pods/Target Support Files/Pods-gifMeSomeLovin/Pods-gifMeSomeLovin.release.xcconfig"; sourceTree = "<group>"; };
 		B900B802C010D2D93C1D13E6 /* Pods_gifMeSomeLovin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gifMeSomeLovin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64682F2361DB87D72DB250B /* Pods-gifMeSomeLovin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gifMeSomeLovin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gifMeSomeLovin/Pods-gifMeSomeLovin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		381FD57721029CF500C5B40F /* gifMeSomeLovin */ = {
 			isa = PBXGroup;
 			children = (
+				381FD5AA2105459300C5B40F /* extendImage.swift */,
 				381FD57821029CF500C5B40F /* AppDelegate.swift */,
 				381FD57A21029CF500C5B40F /* ViewController.swift */,
 				381FD57C21029CF500C5B40F /* Main.storyboard */,
@@ -182,15 +185,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-gifMeSomeLovin/Pods-gifMeSomeLovin-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GiphyCoreSDK/GiphyCoreSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GiphyCoreSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -205,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				381FD57B21029CF500C5B40F /* ViewController.swift in Sources */,
+				381FD5AB2105459300C5B40F /* extendImage.swift in Sources */,
 				381FD57921029CF500C5B40F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
