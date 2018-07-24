@@ -13,11 +13,17 @@ import FLAnimatedImage
 class ViewController: UIViewController {
     
     @IBOutlet weak var gif: FLAnimatedImageView!
+    @IBOutlet weak var giffyLabel: UILabel!
+    @IBOutlet weak var categoryStack: UIStackView!
+    @IBOutlet weak var sendButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         GiphyCore.configure(apiKey: "OfZyxoC76p3imNxos4QnymRZ3OW63KFb")
         // Do any additional setup after loading the view, typically from a nib.
+        giffyLabel.center.x = self.view.center.x
+        gif.center.x = self.view.center.x
+        sendButton.layer.cornerRadius = 5
     }
 
     override func didReceiveMemoryWarning() {

@@ -18,8 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Giffy Boys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lho-E3-3oL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Giffy Boys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lho-E3-3oL">
                                 <rect key="frame" x="77" y="38" width="221" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,29 +28,46 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQc-jf-lil" customClass="FLAnimatedImageView">
                                 <rect key="frame" x="47" y="84" width="281" height="184"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsu-dM-H32">
-                                <rect key="frame" x="164" y="283" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="buttonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mc-9U-cyL"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2D-Ti-aEq">
+                                <rect key="frame" x="62" y="290" width="250" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WbX-mc-gc6">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="214" id="Grw-2t-Rmf"/>
+                                            <constraint firstAttribute="height" constant="30" id="uqI-dG-ocB"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsu-dM-H32">
+                                        <rect key="frame" x="214" y="0.0" width="36" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="buttonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mc-9U-cyL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lho-E3-3oL" secondAttribute="trailing" constant="77" id="FFr-MF-qpx"/>
-                            <constraint firstItem="dQc-jf-lil" firstAttribute="top" secondItem="lho-E3-3oL" secondAttribute="bottom" constant="92" id="MWB-1W-Szv"/>
-                            <constraint firstItem="lho-E3-3oL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="WkN-Er-iAl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dQc-jf-lil" secondAttribute="trailing" constant="47" id="aqL-f4-lmG"/>
-                            <constraint firstItem="lho-E3-3oL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="lJE-nk-gYH"/>
-                            <constraint firstItem="xsu-dM-H32" firstAttribute="top" secondItem="dQc-jf-lil" secondAttribute="bottom" constant="31" id="nmg-1r-gMX"/>
-                            <constraint firstItem="dQc-jf-lil" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="pXO-G3-Xdx"/>
-                            <constraint firstItem="dQc-jf-lil" firstAttribute="top" secondItem="lho-E3-3oL" secondAttribute="bottom" constant="92" id="psp-Kj-dXF"/>
+                            <constraint firstItem="dQc-jf-lil" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Je-kY-c3I"/>
+                            <constraint firstItem="Q2D-Ti-aEq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Glg-Xa-xVS"/>
+                            <constraint firstItem="Q2D-Ti-aEq" firstAttribute="top" secondItem="dQc-jf-lil" secondAttribute="bottom" constant="22" id="Ieq-Hu-a4v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dQc-jf-lil" secondAttribute="bottom" constant="399" id="eOh-Zo-GAt"/>
+                            <constraint firstItem="dQc-jf-lil" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="wxe-PF-EhN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="categoryStack" destination="Q2D-Ti-aEq" id="vli-mb-yGm"/>
                         <outlet property="gif" destination="dQc-jf-lil" id="h6U-k1-MZx"/>
+                        <outlet property="giffyLabel" destination="lho-E3-3oL" id="yam-mr-21E"/>
+                        <outlet property="sendButton" destination="xsu-dM-H32" id="nOb-qk-QQy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
